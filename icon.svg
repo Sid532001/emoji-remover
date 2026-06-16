@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1f3461"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="emojiGrad" cx="38%" cy="32%" r="60%">
+      <stop offset="0%" stop-color="#ffe566"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <clipPath id="emojiClip">
+      <circle cx="64" cy="64" r="32"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="128" height="128" rx="22" fill="url(#bgGrad)"/>
+
+  <!-- Emoji face -->
+  <circle cx="64" cy="64" r="32" fill="url(#emojiGrad)" filter="url(#shadow)"/>
+
+  <!-- Shine highlight -->
+  <ellipse cx="55" cy="50" rx="11" ry="7" fill="white" opacity="0.22"/>
+
+  <!-- Eyes -->
+  <circle cx="53" cy="59" r="4" fill="#1a1a1a"/>
+  <circle cx="75" cy="59" r="4" fill="#1a1a1a"/>
+  <!-- Eye glints -->
+  <circle cx="55" cy="57" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="77" cy="57" r="1.5" fill="white" opacity="0.7"/>
+
+  <!-- Smile -->
+  <path d="M50 73 Q64 86 78 73" stroke="#1a1a1a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Ban ring -->
+  <circle cx="64" cy="64" r="40" fill="none" stroke="#ef4444" stroke-width="8" filter="url(#shadow)"/>
+
+  <!-- Ban diagonal line (top-right → bottom-left) -->
+  <line x1="92" y1="36" x2="36" y2="92" stroke="#ef4444" stroke-width="8" stroke-linecap="round" filter="url(#shadow)"/>
+</svg>

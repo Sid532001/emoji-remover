@@ -3,5 +3,7 @@
 src/**
 .gitignore
 tsconfig.json
+icon.svg
+node_modules/**
 **/*.map
 **/*.ts
