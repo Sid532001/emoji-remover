@@ -3,7 +3,11 @@
   "displayName": "Emoji Remover",
   "description": "Remove AI-generated emojis from code, markdown, and documentation — file by file or across your entire project.",
   "version": "0.1.0",
-  "publisher": "prayogshala",
+  "publisher": "Sidhant Suman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sid532001/emoji-remover"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
